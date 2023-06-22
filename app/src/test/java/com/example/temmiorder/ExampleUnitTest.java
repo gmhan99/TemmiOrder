@@ -1,4 +1,4 @@
-package com.example.temmiserve;
+package com.example.temmiorder;
 
 import org.junit.Test;
 
