@@ -1,0 +1,1256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:fontFamily="@font/gmarket"
+                android:text="뒤로가기"
+                android:textColor="#707070"
+                android:textSize="22sp" />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="8dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="13dp"
+                android:background="#A5FDCA" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <HorizontalScrollView
+            android:layout_width="830dp"
+            android:layout_height="630dp"
+            android:contentDescription="음식 스크롤 뷰">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#FFFFFF"
+                    android:weightSum="4"
+                    android:layout_marginStart="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:weightSum="2"
+                        android:background="@drawable/rounded_solid_button"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ft1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="라면"
+                            android:gravity="center"
+                            android:fontFamily="@font/gmarket"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <Button
+                                android:id="@+id/plusbtn1"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="+"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginStart="10dp"/>
+
+                            <TextView
+                                android:id="@+id/fcnt1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:background="@drawable/white_order"
+                                android:gravity="center"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="30sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"/>
+
+                            <Button
+                                android:id="@+id/minusbtn1"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="-"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginEnd="10dp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:weightSum="2"
+                        android:background="@drawable/rounded_solid_button"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/ft2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="라면"
+                            android:gravity="center"
+                            android:fontFamily="@font/gmarket"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <Button
+                                android:id="@+id/plusbtn2"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="+"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginStart="10dp"/>
+
+                            <TextView
+                                android:id="@+id/fcnt2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:background="@drawable/white_order"
+                                android:gravity="center"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="30sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"/>
+
+                            <Button
+                                android:id="@+id/minusbtn2"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="-"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginEnd="10dp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:weightSum="2"
+                        android:background="@drawable/rounded_solid_button"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/ft3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="라면"
+                            android:gravity="center"
+                            android:fontFamily="@font/gmarket"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <Button
+                                android:id="@+id/plusbtn3"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="+"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginStart="10dp"/>
+
+                            <TextView
+                                android:id="@+id/fcnt3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:background="@drawable/white_order"
+                                android:gravity="center"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="30sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"/>
+
+                            <Button
+                                android:id="@+id/minusbtn3"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="-"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginEnd="10dp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:weightSum="2"
+                        android:background="@drawable/rounded_solid_button"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/ft4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="라면"
+                            android:gravity="center"
+                            android:fontFamily="@font/gmarket"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <Button
+                                android:id="@+id/plusbtn4"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="+"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginStart="10dp"/>
+
+                            <TextView
+                                android:id="@+id/fcnt4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:background="@drawable/white_order"
+                                android:gravity="center"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="30sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"/>
+
+                            <Button
+                                android:id="@+id/minusbtn4"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="-"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginEnd="10dp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#FFFFFF"
+                    android:weightSum="4"
+                    android:layout_marginStart="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:weightSum="2"
+                        android:background="@drawable/rounded_solid_button"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ft5"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="라면"
+                            android:gravity="center"
+                            android:fontFamily="@font/gmarket"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <Button
+                                android:id="@+id/plusbtn5"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="+"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginStart="10dp"/>
+
+                            <TextView
+                                android:id="@+id/fcnt5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:background="@drawable/white_order"
+                                android:gravity="center"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="30sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"/>
+
+                            <Button
+                                android:id="@+id/minusbtn5"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="-"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginEnd="10dp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:weightSum="2"
+                        android:background="@drawable/rounded_solid_button"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/ft6"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="라면"
+                            android:gravity="center"
+                            android:fontFamily="@font/gmarket"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <Button
+                                android:id="@+id/plusbtn6"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="+"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginStart="10dp"/>
+
+                            <TextView
+                                android:id="@+id/fcnt6"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:background="@drawable/white_order"
+                                android:gravity="center"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="30sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"/>
+
+                            <Button
+                                android:id="@+id/minusbtn6"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="-"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginEnd="10dp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:weightSum="2"
+                        android:background="@drawable/rounded_solid_button"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/ft7"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="라면"
+                            android:gravity="center"
+                            android:fontFamily="@font/gmarket"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <Button
+                                android:id="@+id/plusbtn7"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="+"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginStart="10dp"/>
+
+                            <TextView
+                                android:id="@+id/fcnt7"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:background="@drawable/white_order"
+                                android:gravity="center"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="30sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"/>
+
+                            <Button
+                                android:id="@+id/minusbtn7"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="-"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginEnd="10dp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:weightSum="2"
+                        android:background="@drawable/rounded_solid_button"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/ft8"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="라면"
+                            android:gravity="center"
+                            android:fontFamily="@font/gmarket"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <Button
+                                android:id="@+id/plusbtn8"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="+"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginStart="10dp"/>
+
+                            <TextView
+                                android:id="@+id/fcnt8"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:background="@drawable/white_order"
+                                android:gravity="center"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="30sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"/>
+
+                            <Button
+                                android:id="@+id/minusbtn8"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="-"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginEnd="10dp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#FFFFFF"
+                    android:weightSum="4"
+                    android:layout_marginStart="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:weightSum="2"
+                        android:background="@drawable/rounded_solid_button"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ft9"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="라면"
+                            android:gravity="center"
+                            android:fontFamily="@font/gmarket"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <Button
+                                android:id="@+id/plusbtn9"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="+"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginStart="10dp"/>
+
+                            <TextView
+                                android:id="@+id/fcnt9"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:background="@drawable/white_order"
+                                android:gravity="center"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="30sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"/>
+
+                            <Button
+                                android:id="@+id/minusbtn9"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="-"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginEnd="10dp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:weightSum="2"
+                        android:background="@drawable/rounded_solid_button"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/ft10"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="라면"
+                            android:gravity="center"
+                            android:fontFamily="@font/gmarket"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <Button
+                                android:id="@+id/plusbtn10"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="+"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginStart="10dp"/>
+
+                            <TextView
+                                android:id="@+id/fcnt10"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:background="@drawable/white_order"
+                                android:gravity="center"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="30sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"/>
+
+                            <Button
+                                android:id="@+id/minusbtn10"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="-"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginEnd="10dp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:weightSum="2"
+                        android:background="@drawable/rounded_solid_button"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/ft11"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="라면"
+                            android:gravity="center"
+                            android:fontFamily="@font/gmarket"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <Button
+                                android:id="@+id/plusbtn11"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="+"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginStart="10dp"/>
+
+                            <TextView
+                                android:id="@+id/fcnt11"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:background="@drawable/white_order"
+                                android:gravity="center"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="30sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"/>
+
+                            <Button
+                                android:id="@+id/minusbtn11"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="-"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginEnd="10dp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:weightSum="2"
+                        android:background="@drawable/rounded_solid_button"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/ft12"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="라면"
+                            android:gravity="center"
+                            android:fontFamily="@font/gmarket"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <Button
+                                android:id="@+id/plusbtn12"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="+"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginStart="10dp"/>
+
+                            <TextView
+                                android:id="@+id/fcnt12"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:background="@drawable/white_order"
+                                android:gravity="center"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="30sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"/>
+
+                            <Button
+                                android:id="@+id/minusbtn12"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="-"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginEnd="10dp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#FFFFFF"
+                    android:weightSum="4"
+                    android:layout_marginStart="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:weightSum="2"
+                        android:background="@drawable/rounded_solid_button"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ft13"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="라면"
+                            android:gravity="center"
+                            android:fontFamily="@font/gmarket"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <Button
+                                android:id="@+id/plusbtn13"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="+"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginStart="10dp"/>
+
+                            <TextView
+                                android:id="@+id/fcnt13"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:background="@drawable/white_order"
+                                android:gravity="center"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="30sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"/>
+
+                            <Button
+                                android:id="@+id/minusbtn13"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="-"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginEnd="10dp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:weightSum="2"
+                        android:background="@drawable/rounded_solid_button"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/ft14"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="라면"
+                            android:gravity="center"
+                            android:fontFamily="@font/gmarket"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <Button
+                                android:id="@+id/plusbtn14"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="+"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginStart="10dp"/>
+
+                            <TextView
+                                android:id="@+id/fcnt14"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:background="@drawable/white_order"
+                                android:gravity="center"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="30sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"/>
+
+                            <Button
+                                android:id="@+id/minusbtn14"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="-"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginEnd="10dp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:weightSum="2"
+                        android:background="@drawable/rounded_solid_button"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/ft15"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="라면"
+                            android:gravity="center"
+                            android:fontFamily="@font/gmarket"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <Button
+                                android:id="@+id/plusbtn15"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="+"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginStart="10dp"/>
+
+                            <TextView
+                                android:id="@+id/fcnt15"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:background="@drawable/white_order"
+                                android:gravity="center"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="30sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"/>
+
+                            <Button
+                                android:id="@+id/minusbtn15"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="-"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginEnd="10dp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:weightSum="2"
+                        android:background="@drawable/rounded_solid_button"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/ft16"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="라면"
+                            android:gravity="center"
+                            android:fontFamily="@font/gmarket"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <Button
+                                android:id="@+id/plusbtn16"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="+"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginStart="10dp"/>
+
+                            <TextView
+                                android:id="@+id/fcnt16"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:background="@drawable/white_order"
+                                android:gravity="center"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="30sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"/>
+
+                            <Button
+                                android:id="@+id/minusbtn16"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/white_button"
+                                android:text="-"
+                                android:fontFamily="@font/gmarket"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginEnd="10dp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/order_list"
+            android:weightSum="3"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="주문 목록"
+                    android:fontFamily="@font/gmarket"
+                    android:textColor="#000000"
+                    android:textSize="40sp"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:text="주문 없음"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:background="@drawable/white_order"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/white_button"
+                android:text="주문 완료"
+                android:fontFamily="@font/gmarket"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

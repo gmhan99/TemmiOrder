@@ -14,4 +14,14 @@
         android:textColor="#000000"
         android:textSize="18sp"/>
 
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="주문하기"
+        android:textColor="#000000"
+        android:textSize="18sp"/>
+
 </LinearLayout>

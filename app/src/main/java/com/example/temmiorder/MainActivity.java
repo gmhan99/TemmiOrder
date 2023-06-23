@@ -1,5 +1,6 @@
 package com.example.temmiorder;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -32,6 +33,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 finish();
+            }
+        });
+
+        // 주문 액티비티로 들어가기
+        Button orderBtn = (Button) findViewById(R.id.btn2);
+        orderBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), OrderActivity.class);
+                startActivity(intent);
             }
         });
 
